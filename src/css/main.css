@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #0e1212;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+header {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+main {
+  margin: 60px auto;
+  width: 100%;
+  
+
+  @media only screen and (min-width: 992px) {
+    max-width: 1200px;
+    padding: 0;
+  }
+}
+
+/* Modal container */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  padding-top: 80px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85); /* higher contrast */
+
+  &.is-open {
+    display: block;
+  }
+
+  /* Modal image */
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    outline: none; /* remove default focus outline */
+
+    @media (max-width: 600px) {
+      max-width: 95%;
+      max-height: 70vh;
+    }
+  }
+
+  /* Caption */
+  #modalCaption {
+    margin: 20px auto;
+    text-align: center;
+    color: #ffffff; /* ensures high contrast */
+    font-size: 18px;
+    max-width: 90%;
+    line-height: 1.4;
+
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
+  }
+
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: color 0.3s, transform 0.2s;
+
+    @media (max-width: 600px) {
+      font-size: 32px;
+      top: 15px;
+      right: 20px;
+    }
+
+    &:hover, &:focus {
+      color: #ff6f61;
+      outline: 2px solid #ff6f61; /* visible focus for keyboard users */
+      transform: scale(1.1);
+    }
+  }
+}

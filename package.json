@@ -1,0 +1,38 @@
+{
+  "name": "tasteology-by-ca",
+  "version": "1.0.0",
+  "description": "Tasteology by CA – Responsive cooking gallery and cards project with modal popup, accessibility, and SEO considerations.",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --open --mode development",
+    "deploy": "gh-pages -d docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheskaaguiluz/tasteology-by-ca.git"
+  },
+  "keywords": [
+    "tasteology",
+    "gallery",
+    "cooking",
+    "responsive",
+    "webpack",
+    "github-pages"
+  ],
+  "author": "Cheska Aguiluz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheskaaguiluz/tasteology-by-ca/issues"
+  },
+  "homepage": "https://cheskaaguiluz.github.io/tasteology-by-ca/",
+  "devDependencies": {
+    "copy-webpack-plugin": "^13.0.1",
+    "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.6.4",
+    "mini-css-extract-plugin": "^2.9.1",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
